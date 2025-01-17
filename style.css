@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Lato';
+
+}
+body{
+
+}
+#container{
+    max-width: 1760;
+    margin: 0px auto;
+    padding: 30px 50px ;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formcontainer{
+    padding: 20px 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.9);
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number]
+
+
+{
+    width: 70%;
+    height: 25px;
+}
+input[type=text]:hover{
+    border: blue;
+    border: 1.5px solid;
+
+}
+.table-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+label {
+    display: block;
+    padding: 5px;
+}
+td,th{
+    text-align: center;
+    padding: 5px 10px;
+    
+}
+
+.email{
+    
+    width: 100px;
+}
+
+.searchsection{
+    display: inline;
+    justify-content: center;
+    padding: 20px 50px;
+}

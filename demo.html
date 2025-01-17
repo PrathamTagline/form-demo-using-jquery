@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- link the css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>semple from</title>
+</head>
+
+<body>
+    <!-- our simple html form section  -->
+    <div id="container">
+        <div class="form-box">
+
+            <div class="formcontainer">
+
+                <!-- form heading -->
+                <div class="form-title">
+                    <h2>simple form</h2>
+
+                </div>
+
+                <!-- form content  -->
+                <form action="" id="dataForm" >
+
+                    <!-- first name form field -->
+                    <label for="fname">First Name : </label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <!-- last name form field -->
+                    <label for="lname">Last Name : </label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+
+                    <!-- email form field -->
+                    <label for="email">Email : </label>
+                    <input type="text" name="email" id="email" required>
+                    <p id="emailvalidation"></p>
+
+
+                    <!-- age form field -->
+                    <label for="age">Age : </label>
+                    <input type="number" id="age" name="age" required>
+                   
+
+                    <br><br>
+
+                    <!-- data of birth form field -->
+                    <label for="DOB">DOB : </label>
+                    <input type="date" id="DOB" name="DOB" required><br><br>
+
+
+                    <!-- gender form field -->
+                    <label for="gender">gender : </label>
+                    <input type="radio"  name="gender" id="male" value="male">male
+                    <input type="radio"  name="gender" id="female" value="female">female
+                    
+
+                    <!-- hobbies form field -->
+                    <br><br>
+                    <label for="hobbies">hobbies : </label>
+                    <input type="checkbox" name="hobbies"  id="book-reading" value="book reading">book reading
+                    <input type="checkbox" name="hobbies"  id="problem-solving" value="problem solving">problem
+                    solving
+                    <input type="checkbox" name="hobbies"  id="play-cricket" value="playing cricket">playing
+                    cricket
+                    <br><br>
+
+                    <!-- state form field -->
+                    <label for="state">state</label>
+                    <select name="state" id="state">
+                        <option disabled selected value="">---- select stare ----</option>
+                        <option id="Gujarat" value="Gujarat">Gjarat</option>
+                        <option id="Panjab" value="Panjab">Panjab</option>
+                    </select>
+                    <br><br>
+
+                    <!-- city form field -->
+                    <label for="city">city</label>
+                    <select name="city" id="city">
+                        <option disabled selected value>---- select city ----</option>
+                    </select>
+            
+
+                    <br><br>
+                    <!-- submit button -->
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- table section -->
+    <div id="container">
+        <div class="table-container">
+            <div id="table">
+                <label for="search">search</label>
+                <input type="text" id="search" onkeyup="tableFilter()" placeholder="Search for names..">
+                <br><br>
+                <!-- actual table -->
+                <table id="dataTable" border="1" style="border-collapse: collapse; width: 300px;;">
+                    <!-- table heading part -->
+                    <thead>
+                        <tr>
+
+                            <th>User ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>DOB</th>
+                            <th>Gender</th>
+                            <th>Hobbies</th>
+                            <th>state</th>
+                            <th>city</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+
+                    <!-- table body part -->
+                    <tbody>
+                        <!-- contain will be added dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- script for the edit and delete the data -->
+    <script src="jquery.js"></script>
+
+</body>
+
+</html>

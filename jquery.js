@@ -1,7 +1,7 @@
 $(function () {
     // take the elements by using ID selector and name selector (we can be said the use query to select the element by name)
     const form = $("#dataForm");
-    let tableBody = $("#dataTable tbody");
+    const tableBody = $("#dataTable tbody");
     const state = $('[name="state"]');
     const city = $('[name="city"]');
     const searchInput = $('#search');

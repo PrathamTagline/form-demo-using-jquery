@@ -99,9 +99,6 @@ $(function () {
 
         let isValid = true;
 
-        console.log(typeof gender)
-        console.log(typeof hobbies)
-
         // check email is match with the regular expration
         if (!email.match(EMAIL_REGEXP)) {
             alert("Please enter a valid email address.");
